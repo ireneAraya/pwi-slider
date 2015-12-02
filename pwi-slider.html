@@ -1,5 +1,4 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../pwi-save/pwi-save.html">
 
 <dom-module id="pwi-slider">
 	
@@ -17,11 +16,11 @@
 			},
 
 			ready: function() {
-    			var array = JSON.parse(photos);
+    			var slides = JSON.parse(photos);
     			var index = 0;
     			delay(function(){
-    				$.background.style.background = 'url('+ array[i] +')';
-    				if (i == array.length){
+    				$.background.style.background = 'url('+ slides[i] +')';
+    				if (i == slides.length){
     					i=o;
     				}else{
     					i ++;
