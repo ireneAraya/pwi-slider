@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../pwi-save/pwi-save.html">
+
+<dom-module id="pwi-slider">
+	
+	<template>
+			
+	</template>
+
+	<script>
+		Polymer({
+			is: 'pwi-slider',
+
+			properties:{
+				photos: String,
+				time: Number
+			},
+
+			ready: function() {
+    			var array = JSON.parse(photos);
+    			var index = 0;
+    			delay(function(){
+    				$.background.style.background = 'url('+ array[i] +')';
+    				if (i == array.length){
+    					i=o;
+    				}else{
+    					i ++;
+    				};    	
+    			}, time * 1000);
+  			}
+		});
+		
+	</script>
+</dom-module>
